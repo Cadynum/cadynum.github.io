@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Apelsin</title>
+<style>
+
+@font-face {  
+	font-family: 'LM';  
+	src: local('Latin Modern Sans 10 Regular')
+		, local('LMSans10-Regular')
+		, url('lmsans10-regular.woff') format("woff");  
+}
+
+@font-face {  
+	  font-family: 'LM';  
+	  src: local('Latin Modern Sans 10 Bold')
+		, local('LMSans10-Bold')
+		, url('lmsans10-bold.woff') format("woff");  
+	  font-weight: bold;
+}
+
+
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+	font-family: 'LM', sans-serif;
+	background: linear-gradient(to bottom, #faa10f, #fcc028 800px);
+	background-repeat: no-repeat;
+	background-color: #fcc028;
+	color: #000;
+	overflow-x: hidden;
+}
+
+#container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	max-width: 800px;
+}
+
+/*452 x 452*/
+#apelsin {
+	position: absolute;
+	left: -226px;
+	top: -226px;
+	height: 452px;
+	width: 452px;
+	z-index: 1;
+
+	background-image: url('apelsin_big.png');
+}
+
+#humble-slogan {
+	position: absolute;
+	top: 200px;
+	right: 0px;
+	z-index: 2;
+
+	font-size: 16px;
+}
+
+
+#head-text {
+	position: absolute;
+	top: 20px;
+	right: -32px;
+	z-index: 2;
+
+	font-size: 91px;
+	letter-spacing: 25px;
+	color: #FFF;
+	text-shadow: 0 0 12px #FFF;
+}
+
+#content {
+	position: relative;
+	top: 226px;
+
+	background: linear-gradient(to bottom, #bbbbbb, #dddddd 600px);
+}
+
+#content-inner {
+	position: relative;
+	z-index: 3;
+	padding: 5px 20px;
+
+	border: 7px solid #666666;
+	box-shadow: 0 0 10px #666666, 0 0 10px #666666 inset;
+}
+
+#os-container {
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+
+#os-container > .os {
+	display: block;
+	clear: both;
+	padding: 10px 0;
+}
+
+#os-container img {
+	float: left;
+	display: block;
+	margin: 3px 15px;
+}
+
+#os-container h3, p {
+	padding: 2px;
+	margin: 0px;
+}
+
+#footer {
+	display: block;
+	position: relative;
+	top: 226px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 0;
+}
+
+#footer .copyright {
+	text-align: center;
+}
+
+#footer .law-junk {
+	font-size: 0.625em;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border: 0px;
+}
+
+
+dl {
+	margin-left: 1em;
+    overflow: hidden;
+}
+
+dt {
+    clear: both;
+    float: left;
+    width: 7em;
+    font-weight: bold;
+}
+
+dd {
+    float: left;
+}
+
+code {
+	margin: 0px 2px;
+	padding: 0px 5px;
+	border: 1px solid #777;
+	background-color: #eee;
+	border-radius: 3px 3px 3px 3px;
+}
+
+
+pre {
+	border: 1px solid #777;
+	background-color: #eee;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px 3px 3px 3px;
+}
+pre > code {
+    margin: 0px;
+    padding: 0px;
+    white-space: pre;
+    border: medium none;
+    background: none repeat scroll 0% 0% transparent;
+}
+
+a[href^="http://"], a[href^="https://"] {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=") no-repeat scroll right center transparent;
+    padding-right: 13px;
+}
+
+a, a:active {
+	text-decoration: none;
+	color: blue;
+}
+
+a:visited {
+	color: #800080;
+}
+
+a:hover, a:focus {
+	text-decoration: underline;
+}
+
+</style>
+</head>
+
+<body>
+<div id="container">
+<div id="head-text">Apelsin</div>
+<div id="humble-slogan"><i>The</i> server browser for Tremulous 1.1, GPP and Unvanquished</div>
+<div id="content">
+<div id="apelsin"></div>
+
+<div id="content-inner">
+
+<blockquote>
+“Apelsin is the latest state-of-the-art in server browser technology. Precision engineered with hand crafted military grade secure Haskell-code, you'll learn to love the simple, responsive and bug free browser. Best of all — it's <strong>free</strong>.”
+<p style="text-align: right">— Questionably independent reviewer, Jan 2013</p>
+</blockquote>
+
+<h1>Apelsin Tremulous Browser</h1>
+<p>Apelsin is a two-paned, open source, server- and clan browser.
+It shows servers and players from <strong>Tremulous 1.1</strong>, <strong>Tremulous GPP</strong>
+and <strong>Unvanquished</strong> at the same time.
+Refreshing all servers should take about 1‒2 seconds depending on your connection.
+The only dependencies are gtk2 and gmp.
+Apelsin typically uses about 14MiB RAM.
+License: GPL3
+Written in: Haskell</p>
+
+<a href="browser.png">
+	<img src="browser_small.png" style="width: auto; max-width: 100%;" alt="Program screenshot" />
+</a>
+
+<h2 id="download">Download</h2>
+Download version 1.2.3 for your operating system:
+<div id="os-container">
+<div class="os">
+	<img src="os_arch.png" alt="">
+
+	<h3>Arch Linux</h3>
+	<p>Install <code>apelsin</code> from the AUR. See <a href="https://aur.archlinux.org/packages/apelsin">aur.archlinux.org/packages/apelsin</a>.</p>
+	
+</div>
+
+<div class="os">
+	<img src="os_ubuntu.png" alt="">
+	<h3>Ubuntu and derivatives (like Mint)</h3>
+	<p> Install it from the <a href="https://launchpad.net/~christoffer-k/+archive/apelsin">PPA</a>:
+<pre><code>sudo add-apt-repository ppa:christoffer-k/apelsin
+sudo apt-get update &amp;&amp; sudo apt-get install apelsin</code></pre>
+</div>
+
+<div class="os">
+		<img src="os_win.png" alt="">
+		<h3>Windows</h3>
+		<p>Use the installer: <a href="https://github.com/Cadynum/Apelsin/releases/v1.2.3/1477/apelsin-setup-1.2.3.exe">apelsin-setup-1.2.3.exe</a></p>
+		<p><em>Note: You will have to download new releases manually.</em></p>
+</div>
+
+<div class="os">
+		<img src="os_haskell.png" alt="">
+		<h3>Install from hackage</h3>
+		<p>You can also build Apelsin from source on any OS, including Mac OS X.
+		Fist, install <a href="http://www.haskell.org/platform/">The Haskell Platform</a> (2013.2+ required), and then run the following:</p>
+<pre><code>cabal update
+cabal install apelsin</code></pre>
+</div>
+
+</div>
+
+<h2>Features</h2>
+<ul>
+<li>Fuzzy search matching everything (<code>-</code> excludes)</li>
+<li>Server browser</li>
+<li>Find players</li>
+<li>Online clan members</li>
+<li>Synchronized clan list</li>
+<li>Optional auto-refreshing of servers</li>
+</ul>
+<p>You can change the ratio between the panes by dragging the handle in the middle.</p>
+<h3>Clan list</h3>
+<p>The clan list is by default synced against the DDOS server on startup.
+As the list has a historical value, no clans will be removed.</p>
+<p><strong>Add or update clan entries:</strong></p>
+<dl>
+	<dt>Mail</dt>
+	<dd><a href="mailto:clans@ddos-tremulous.eu">clans@ddos-tremulous.eu</a></dd>
+
+	<dt>IRC</dt>
+	<dd><a href="irc://irc.freenode.net/##ddos">##ddos @ irc.freenode.net</a></dd>
+</dl>
+
+<h2>Keyboard shotcuts</h2>
+	
+<dl>
+<dt>Ctrl+R or F5:</dt> <dd>Refresh all servers</dd>
+<dt>Ctrl+S or F6:</dt> <dd>Sync clan list</dd>
+<dt>F7:</dt> <dd>About</dd>
+<dt>Ctrl+L or Ctrl+F:</dt> <dd>Focus Input</dd>
+<dt>Alt+[1-5]:</dt> <dd>Switch tab</dd>
+</dl>
+
+
+<h2>Source code</h2>
+<ul>
+<li>Apelsin: <code>git://github.com/Cadynum/Apelsin.git</code></li>
+<li>tremulous-query: <code>git://github.com/Cadynum/tremulous-query.git</code></li>
+<li><a href="http://github.com/Cadynum/Apelsin">Apelsin on GitHub</a></li>
+</ul>
+
+<h2>Author</h2>
+<dl>
+	<dt>Developer</dt>
+	<dd>Christoffer Öjeling &lt;<a href="mailto:christoffer@ojeling.net">christoffer@ojeling.net</a>&gt;</dd>
+	<dt>Contributors</dt>
+	<dd>DDOS <a href="http://ddos-tremulous.eu">ddos-tremulous.eu</a></dd>
+</dl>
+
+
+</div>
+</div>
+
+<div id="footer">
+<div id="social">
+	<a href="social.html"><img src="social.png" alt="social crap" title="Share on social websites!"></a>
+</div>
+	<p class="copyright">Copyright © 2011-2013 Christoffer Öjeling, DDOS Ltd.<p>
+	<p class="copyright">
+	Like what the author is doing? Consider donating some <a href="https://www.weusecoins.com">bitcoins</a> to <a href="bitcoin:17Bo4vRmHJs4wtHrWfGhtZP2sVNQzDWQiA">17Bo4vRmHJs4wtHrWfGhtZP2sVNQzDWQiA</a>.
+	</p>
+
+	<p class="law-junk">IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+</div>
+
+</div>
+</body>
+</html>
